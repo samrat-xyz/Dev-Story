@@ -15,6 +15,9 @@ function Header() {
         <Link href="/login">Login</Link>
       </li>
       <li>
+        <Link href="/stories">Stories</Link>
+      </li>
+      <li>
         <Link href={"/register"}>Register</Link>
       </li>
     </>
