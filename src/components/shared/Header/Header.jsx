@@ -1,27 +1,33 @@
+"use client";
+import NavLink from "@/components/NavLink/NavLink";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 function Header() {
+  const path = usePathname();
+  console.log(path);
+  if (path.startsWith("/dashboard")) return <></>;
   const links = (
     <>
-    <li>
-        <Link href="/">Home</Link>
+      <li>
+        <NavLink href="/">Home</NavLink>
       </li>
       <li>
-        <Link href="/about">About</Link>
+        <NavLink href="/about">About</NavLink>
       </li>
       <li>
-        <Link href="/stories">Stories</Link>
+        <NavLink href="/stories">Stories</NavLink>
       </li>
       <li>
-        <Link href="/tutorial">Tutorial</Link>
+        <NavLink href="/tutorial">Tutorial</NavLink>
       </li>
       <li>
-        <Link href="/login">Login</Link>
+        <NavLink href="/login">Login</NavLink>
       </li>
-      
+
       <li>
-        <Link href={"/register"}>Register</Link>
+        <NavLink href={"/register"}>Register</NavLink>
       </li>
     </>
   );
