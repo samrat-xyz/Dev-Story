@@ -14,7 +14,7 @@ The main goal of this project is to strengthen my understanding of Next.js funda
 - `loading.js` for route-level loading states
 - `not-found.js` for custom 404 handling
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - Next.js
 - Tailwind CSS
 
