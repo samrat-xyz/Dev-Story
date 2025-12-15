@@ -10,13 +10,16 @@ function Header() {
       <li>
         <Link href="/about">About</Link>
       </li>
-      
-      <li>
-        <Link href="/login">Login</Link>
-      </li>
       <li>
         <Link href="/stories">Stories</Link>
       </li>
+      <li>
+        <Link href="/tutorial">Tutorial</Link>
+      </li>
+      <li>
+        <Link href="/login">Login</Link>
+      </li>
+      
       <li>
         <Link href={"/register"}>Register</Link>
       </li>
